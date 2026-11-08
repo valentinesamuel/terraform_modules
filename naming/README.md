@@ -237,7 +237,7 @@ You can reference the module in two ways.
 
 ```hcl
 module "naming" {
-  source = "git::https://github.com/<your-org>/<your-repo>.git//modules/naming?ref=v1.0.0"
+  source = "git::https://github.com/valentinesamuel/terraform_modules.git//modules/naming?ref=v1.0.0"
   # ...
 }
 ```
@@ -253,7 +253,7 @@ module "naming" {
 
 Notes on the GitHub source:
 
-- Replace `<your-org>/<your-repo>` with the repository that hosts this module.
+<!-- - Replace `valentinesamuel/terraform_modules` with the repository that hosts this module. -->
 - `//modules/naming` (double slash) tells Terraform which **subdirectory** of the repo contains the module.
 - `?ref=` pins a **tag**, branch or commit SHA. Always pin to a tag (e.g. `v1.0.0`) — never track `main`, or a change to the module could rename your resources unexpectedly.
 - For a private repo, Terraform uses your local git credentials (credential helper, `gh auth login`, or SSH keys).
@@ -263,7 +263,7 @@ Notes on the GitHub source:
 
 ```hcl
 module "naming" {
-  source = "git::https://github.com/<your-org>/<your-repo>.git//modules/naming?ref=v1.0.0"
+  source = "git::https://github.com/valentinesamuel/terraform_modules.git//modules/naming?ref=v1.0.0"
   # source = "../../modules/naming" # local alternative
 
   org         = "acme"
@@ -389,7 +389,7 @@ my-stack/
 
 ```hcl
 module "naming" {
-  source = "git::https://github.com/<your-org>/<your-repo>.git//modules/naming?ref=v1.0.0"
+  source = "git::https://github.com/valentinesamuel/terraform_modules.git//modules/naming?ref=v1.0.0"
   # source = "../../modules/naming" # local alternative
 
   org                 = var.org
