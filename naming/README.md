@@ -237,7 +237,7 @@ You can reference the module in two ways.
 
 ```hcl
 module "naming" {
-  source = "git::https://github.com/valentinesamuel/terraform_modules.git//modules/naming?ref=v1.0.0"
+  source = "git::https://github.com/valentinesamuel/terraform_modules.git//naming?ref=v1.0.0"
   # ...
 }
 ```
@@ -263,7 +263,7 @@ Notes on the GitHub source:
 
 ```hcl
 module "naming" {
-  source = "git::https://github.com/valentinesamuel/terraform_modules.git//modules/naming?ref=v1.0.0"
+  source = "git::https://github.com/valentinesamuel/terraform_modules.git//naming?ref=v1.0.0"
   # source = "../../modules/naming" # local alternative
 
   org         = "acme"
@@ -389,7 +389,7 @@ my-stack/
 
 ```hcl
 module "naming" {
-  source = "git::https://github.com/valentinesamuel/terraform_modules.git//modules/naming?ref=v1.0.0"
+  source = "git::https://github.com/valentinesamuel/terraform_modules.git//naming?ref=v1.0.0"
   # source = "../../modules/naming" # local alternative
 
   org                 = var.org
